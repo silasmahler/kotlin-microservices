@@ -55,3 +55,7 @@ dependencyManagement {
 		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
 	}
 }
+
+configurations {
+	provided.all*.exclude group: 'javax.servlet'
+}
