@@ -1,7 +1,7 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${vcap.services.eureka-service.credentials.uri:http://eureka-service:8761}/eureka/
+      defaultZone: http://eureka-service:8761/eureka/
   instance:
     metadata-map:
       instanceId: ${spring.application.name}:${random.value}
