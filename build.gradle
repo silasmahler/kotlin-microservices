@@ -2,7 +2,6 @@ buildscript {
     ext {
         kotlinVersion = '1.2.0'
         springBootVersion = "2.0.0.M7"
-        springBootGradlePluginVersion = "2.0.0.BUILD-SNAPSHOT"
     }
     repositories {
         mavenCentral()
@@ -10,27 +9,16 @@ buildscript {
         maven { url "https://repo.spring.io/milestone" }
     }
     dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootGradlePluginVersion}")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlinVersion}")
         classpath("org.jetbrains.kotlin:kotlin-allopen:${kotlinVersion}")
     }
 }
-allprojects {
-    repositories {
-        mavenCentral()
-        jcenter()
-    }
-    ext {
-        springVersion = "$springBootVersion"
-    }
-    task hello {
-        doLast { task ->
-            println "I'm $task.project.name"
-        }
-    }
-}
 subprojects {
     apply plugin: 'kotlin'
+    apply plugin: 'kotlin-spring'
+    apply plugin: 'eclipse'
+    apply plugin: 'idea'
     apply plugin: 'org.springframework.boot'
     apply plugin: 'io.spring.dependency-management'
     jar {
