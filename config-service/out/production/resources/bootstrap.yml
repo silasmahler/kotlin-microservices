@@ -8,5 +8,5 @@ spring:
           search-locations: classpath:/shared
         git:
           clone-on-start: true
-          uri: https://github.com/silasmahler/kotlin-microservices-config
+          uri: https://github.com/silasmahler/kotlin-microservices
         searchPaths: config-service/src/main/resources/shared
