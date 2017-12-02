@@ -4,5 +4,7 @@ spring:
       uri: http://localhost:8888
   application:
     name: eureka-service
+server:
+  port: 8761
     
 # Don't add properties to this file. Any further properties will be managed in the config-server.
