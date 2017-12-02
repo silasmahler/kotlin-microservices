@@ -4,8 +4,12 @@ spring:
       server:
         native:
           search-locations: classpath:/shared
+        git:
+          clone-on-start: true
+          uri: https://github.com/silasmahler/kotlin-microservices-config
   profiles:
      active: native
-
+  application:
+    name: config-server
 server:
   port: 8181
