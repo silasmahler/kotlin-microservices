@@ -6,7 +6,7 @@ eureka:
     metadata-map:
       instanceId: ${spring.application.name}:${random.value}
 server:
-  port: 8888
+  port: 8181
 
 
 zuul:
