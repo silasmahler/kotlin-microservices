@@ -1,13 +1,9 @@
-package by.cortwave.cotlinmicroservices.agregator.service
+package de.silasmahler.aggregatorservice.service
 
 import org.springframework.cloud.netflix.feign.FeignClient
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestMethod
 
-/**
- * @author Dmitry Pranchuk
- * @since 5/11/16.
- */
 @FeignClient("data-service")
 interface DataService {
 
