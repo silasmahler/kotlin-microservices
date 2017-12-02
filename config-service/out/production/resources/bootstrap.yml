@@ -10,3 +10,5 @@ spring:
           clone-on-start: true
           uri: https://github.com/silasmahler/kotlin-microservices
         searchPaths: config-service/src/main/resources/shared
+server:
+  port: 8888
