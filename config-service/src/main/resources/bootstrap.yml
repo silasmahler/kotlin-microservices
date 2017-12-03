@@ -9,10 +9,9 @@ spring:
     config:
       server:
         git:
-         #clone-on-start: true
-         #uri: https://github.com/silasmahler/kotlin-microservices
+         clone-on-start: true
+       # uri: https://github.com/silasmahler/kotlin-microservices.git
          #search-paths: config-service/src/main/resources/configs
-        bootstrap: true
         native:
           search-locations: config-service/src/main/resources/configs
 eureka:
