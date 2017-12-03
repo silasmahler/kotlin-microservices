@@ -11,8 +11,7 @@ spring:
         git:
           clone-on-start: true
           uri: https://github.com/silasmahler/kotlin-microservices
-        searchPaths:
-         - config-service/src/main/resources/configs
+        searchPaths: configs
         bootstrap: true
 eureka:
   instance:
