@@ -1,4 +1,5 @@
-spring
+server:
+  port: 0
 eureka:
   client:
     serviceUrl:
@@ -6,5 +7,3 @@ eureka:
   instance:
     metadata-map:
       instanceId: ${spring.application.name}:${random.value}
-server:
-  port: 0
