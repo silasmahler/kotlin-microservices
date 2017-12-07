@@ -1,24 +1,24 @@
 server:
   port: 8888
+
 spring:
   application:
     name: config-service
   profiles:
-    active: native
+    active: cloud
+  config:
+    name: config-service
   cloud:
     config:
       server:
         git:
-         clone-on-start: true
-       # uri: https://github.com/silasmahler/kotlin-microservices.git
-         #search-paths: config-service/src/main/resources/configs
-        native:
-          search-locations: config-service/src/main/resources/configs
+          uri: https://github.com/silasmahler/kotlin-microservices-config.git
+         #search-paths:
+        #native:
+          #search-locations: config-service/src/main/resources/configs
 eureka:
   instance:
     hostname: localhost
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
-
-

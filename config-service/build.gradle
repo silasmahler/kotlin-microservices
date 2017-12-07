@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		kotlinVersion = '1.2.0'
+		kotlinVersion = '1.1.61'
 		springBootVersion = "2.0.0.M7"
 	}
 	repositories {
@@ -45,6 +45,7 @@ ext {
 }
 
 dependencies {
+	compile("org.springframework.boot:spring-boot-starter-actuator")
 	compile('org.springframework.cloud:spring-cloud-starter')
 	compile('org.springframework.cloud:spring-cloud-config-server')
 	compile("org.jetbrains.kotlin:kotlin-stdlib-jre8")
