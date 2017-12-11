@@ -5,17 +5,16 @@ spring:
   application:
     name: config-service
   profiles:
-    active: cloud
+    active: native #cloud
   config:
     name: config-service
   cloud:
     config:
       server:
+        native:
+          search-locations: config-service/src/main/resources/configs
         git:
           uri: https://github.com/silasmahler/kotlin-microservices-config.git
-         #search-paths:
-        #native:
-          #search-locations: config-service/src/main/resources/configs
 eureka:
   instance:
     hostname: localhost
