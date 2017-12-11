@@ -7,3 +7,6 @@ eureka:
   instance:
     metadata-map:
       instanceId: ${spring.application.name}:${random.value}
+
+turbine:
+  cluster-name-expression: 'default'
