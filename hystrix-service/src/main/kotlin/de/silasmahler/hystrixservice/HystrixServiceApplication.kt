@@ -1,7 +1,7 @@
 package de.silasmahler.hystrixservice
 
-import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.boot.runApplication
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient
 import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard
 import org.springframework.cloud.netflix.turbine.EnableTurbine
@@ -13,5 +13,5 @@ import org.springframework.cloud.netflix.turbine.EnableTurbine
 class HystrixServiceApplication
 
 fun main(args: Array<String>) {
-    SpringApplication.run(HystrixServiceApplication::class.java, *args)
+    runApplication<HystrixServiceApplication>(*args)
 }
