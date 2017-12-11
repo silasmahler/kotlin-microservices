@@ -14,8 +14,8 @@ zuul:
       path: /**
       service-id: aggregator-service
     test-service:
-      path: /data/**
-      service-id: data-service
+      path: /test/**
+      service-id: test-service
 
    # backend:
     #  path: /guestbook/**

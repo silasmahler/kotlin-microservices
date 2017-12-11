@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController
 
 
 @RestController
-@RequestMapping("/data")
+@RequestMapping("/test")
 class DataController {
 
     @Autowired
