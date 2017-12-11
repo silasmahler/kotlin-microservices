@@ -4,4 +4,6 @@ include 'eureka-service'
 include 'gateway-service'
 include 'aggregator-service'
 include 'test-service'
+include 'hystrix-service'
+
 
