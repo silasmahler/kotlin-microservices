@@ -2,10 +2,10 @@ package de.silasmahler.testservice
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient
 
 @SpringBootApplication
-@EnableEurekaClient
+@EnableDiscoveryClient
 class TestServiceApplication
 
 fun main(args: Array<String>) {

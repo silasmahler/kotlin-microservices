@@ -10,9 +10,13 @@ eureka:
 
 zuul:
   routes:
-    facade:
+    aggregator-service:
       path: /**
       service-id: aggregator-service
+    test-service:
+      path: /data/**
+      service-id: data-service
+
    # backend:
     #  path: /guestbook/**
      # serviceId: backend
