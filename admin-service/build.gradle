@@ -45,8 +45,12 @@ ext {
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter')
+	compile('org.springframework.boot:spring-boot-starter-security')
 	compile('de.codecentric:spring-boot-admin-server:1.5.5')
 	compile('de.codecentric:spring-boot-admin-server-ui:1.5.5')
+	compile('de.codecentric:spring-boot-admin-server-ui-login:1.5.5')
+	compile('de.codecentric:spring-boot-admin-starter-client:1.5.5')
+	compile('org.jolokia:jolokia-core')
 	compile('org.springframework.boot:spring-boot-starter-actuator')
 	compile('org.springframework.cloud:spring-cloud-starter-config')
 	compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
