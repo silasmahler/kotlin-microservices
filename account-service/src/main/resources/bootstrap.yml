@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: account-service
+  cloud:
+    config:
+      uri: http://localhost:8888
+
+# Don't add properties to this file. Any further properties will be managed in the config-server.
